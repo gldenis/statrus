@@ -1,0 +1,285 @@
+<!doctype html>
+<html class="page" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>landing parcel template</title>
+    <meta name="theme-color" content="#000">
+    <link rel="preload" href="fonts/Inter/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Inter/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="scss/vendor.scss">
+    <link rel="stylesheet" href="scss/main.scss">
+</head>
+<body class="page__body">
+<div class="mobile-header">
+    <div class="mobile-header__container">
+        <a href="/" class="mobile__logo">
+            <img src="images/logo-mobile.svg" alt="">
+        </a>
+        <div class="mobile-header__panel">
+            <div class="mobile-header__info">
+                <svg width="16" height="16">
+                    <use href="icons/menu/advantage.svg"/>
+                </svg>
+                12
+            </div>
+            <button class="burger__wrapper">
+                <span class="btn-reset burger"><span class="burger__line"></span></span>
+            </button>
+        </div>
+    </div>
+</div>
+<nav class="navbar">
+    <ul class="menu__list">
+        <li class="menu__item menu__item--logo">
+            <a href="/" class="logo">
+                <img src="images/logo.svg" alt="">
+                Statrus
+            </a>
+        </li>
+        <li class="menu__item">
+            <a href="" class="menu__link">
+                <svg class="menu__icon" width="16" height="16">
+                    <use href="icons/menu/identification.svg"/>
+                </svg>
+                <span> Данные обо мне <sup>free</sup> </span>
+            </a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link menu__link--disabled">
+                <svg class="menu__icon" width="16" height="16">
+                    <use href="icons/menu/lock.svg"/>
+                </svg>
+                Данные о других
+            </a>
+        </li>
+        <li class="menu__item">
+            <a href="" class="menu__link">
+                <svg class="menu__icon" width="16" height="16">
+                    <use href="icons/menu/protection.svg"/>
+                </svg>
+                Моя защита
+            </a>
+        </li>
+        <li class="menu__item">
+            <a href="" class="menu__link">
+                <svg class="menu__icon" width="16" height="16">
+                    <use href="icons/menu/protection.svg"/>
+                </svg>
+                API
+            </a>
+        </li>
+    </ul>
+
+    <ul class="menu__list">
+        <li class="menu__item">
+            <a href="" class="menu__link">
+                <svg class="menu__icon" width="16" height="16">
+                    <use href="icons/menu/advantage.svg"/>
+                </svg>
+                Доступно проверок 1
+            </a>
+        </li>
+        <li class="menu__item">
+            <a href="" class="menu__link">
+                <svg class="menu__icon" width="16" height="16">
+                    <use href="icons/menu/support.svg"/>
+                </svg>
+                Поддержка
+            </a>
+        </li>
+        <li class="menu__item">
+            <a href="" class="menu__link">
+                <svg class="menu__icon" width="16" height="16">
+                    <use href="icons/menu/me.svg"/>
+                </svg>
+                Вход и регистрация
+            </a>
+        </li>
+        <li class="menu__item">
+            <div class="menu-monitoring">
+                <div class="menu-monitoring__title">Мониторинг</div>
+                <div class="menu-monitoring__text">Скройте данные от нежелательных лиц</div>
+                <a href="#" class="btn menu-monitoring__btn">
+                    <svg class="menu__icon" width="16" height="16">
+                        <use href="icons/arrow-right.svg"/>
+                    </svg>
+                    Подробнее
+                </a>
+            </div>
+        </li>
+    </ul>
+</nav>
+<main class="page__content">
+    <div class="container">
+        <div class="hero">
+            <div class="hero__main">
+                <h1 class="title title--xl hero__title">Поиск и контроль ваших данных в интернете. </h1>
+                <p class="hero__slogan">Единый центр персональной идентификации и цифровой защиты личности.</p>
+            </div>
+            <div class="hero__logo">
+                <img src="images/logo.svg" alt="">
+            </div>
+        </div>
+
+
+        <form class="search-form page__search-form">
+            <div class="search-form__field">
+                <svg class="search-form__field-icon" width="32" height="32">
+                    <use href="icons/mobile.svg"/>
+                </svg>
+                <input class="search-form__input" type="text" placeholder="Номер телефона">
+            </div>
+            <div class="search-form__buttons">
+                <button class="search-form__btn search-form__btn--blue">Проверить себя</button>
+                <button class="search-form__btn search-form__btn">Проверить других</button>
+            </div>
+        </form>
+
+
+        <div class="statistic-section page__statistic">
+            <div class="statistic-section__item">
+                <svg class="statistic-section__icon" width="40" height="40">
+                    <use href="icons/userdatabase.svg"/>
+                </svg>
+                <div class="statistic-section__value">100 032 862</div>
+                <div class="statistic-section__text">Данных пользователей в базе</div>
+            </div>
+            <div class="statistic-section__item">
+                <svg class="statistic-section__icon" width="40" height="40">
+                    <use href="icons/service.svg"/>
+                </svg>
+                <div class="statistic-section__value">32</div>
+                <div class="statistic-section__text">Инструментов для API мониторинга</div>
+            </div>
+            <div class="statistic-section__item">
+                <svg class="statistic-section__icon" width="40" height="40">
+                    <use href="icons/checks.svg"/>
+                </svg>
+                <div class="statistic-section__value">31</div>
+                <div class="statistic-section__text">Человек сегодня проверены</div>
+            </div>
+            <div class="statistic-section__item">
+                <svg class="statistic-section__icon" width="40" height="40">
+                    <use href="icons/experience.svg"/>
+                </svg>
+                <div class="statistic-section__value">12</div>
+                <div class="statistic-section__text">Опыта в сфере поиска и защиты данных</div>
+            </div>
+        </div>
+
+
+        <div class="remove-section">
+            <div class="remove-section__slider">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide remove-section__slide">
+                            <img class="remove-section__image" src="https://placehold.co/560x400/9A9BB7/fff?text=1" alt="">
+                            <div class="remove-section__content">
+                                <div class="remove-section__title">Удаление вашей информации из интернета и приложений</div>
+                                <div class="remove-section__description">Удаление вашей информации из интернета и приложений</div>
+                                <a href="#" class="remove-section__btn">Попробовать бесплатно</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide remove-section__slide">
+                            <img class="remove-section__image" src="https://placehold.co/560x400/9A9BB7/fff?text=2" alt="">
+                            <div class="remove-section__content">
+                                <div class="remove-section__title">2 Удаление вашей информации из интернета и приложений</div>
+                                <div class="remove-section__description">Удаление вашей информации из интернета и приложений</div>
+                                <a href="#" class="remove-section__btn">Попробовать бесплатно</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide remove-section__slide">
+                            <img class="remove-section__image" src="https://placehold.co/560x400/9A9BB7/fff?text=3" alt="">
+                            <div class="remove-section__content">
+                                <div class="remove-section__title">3 Удаление вашей информации из интернета и приложений</div>
+                                <div class="remove-section__description">Удаление вашей информации из интернета и приложений</div>
+                                <a href="#" class="remove-section__btn">Попробовать бесплатно</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide remove-section__slide">
+                            <img class="remove-section__image" src="https://placehold.co/560x400/9A9BB7/fff?text=4" alt="">
+                            <div class="remove-section__content">
+                                <div class="remove-section__title">4 Удаление вашей информации из интернета и приложений</div>
+                                <div class="remove-section__description">Удаление вашей информации из интернета и приложений</div>
+                                <a href="#" class="remove-section__btn">Попробовать бесплатно</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide remove-section__slide">
+                            <img class="remove-section__image" src="https://placehold.co/560x400/9A9BB7/fff?text=5" alt="">
+                            <div class="remove-section__content">
+                                <div class="remove-section__title">5 Удаление вашей информации из интернета и приложений</div>
+                                <div class="remove-section__description">Удаление вашей информации из интернета и приложений</div>
+                                <a href="#" class="remove-section__btn">Попробовать бесплатно</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="protect-section page__protect">
+            <div class="protect-section__img">
+                <img src="images/protect.png" alt="" width="200" height="200">
+            </div>
+            <div class="protect-section__content">
+                <div class="protect-section__content-wrapper">
+                    <h2 class="title title--l protect-section__title">Весь спектр защиты ваших устройств от мошенников</h2>
+                    <p class="protect-section__description">
+                        Самый полный курс по защите от мошенничества и вымогателей в интернете
+                    </p>
+                </div>
+                <a href="#" class="btn protect-section__btn">Узнать подробнее</a>
+            </div>
+        </div>
+
+<!--        <div class="step">-->
+<!--            <h2 class="title title&#45;&#45;xl">Быстрая и бесплатная проверка своих данных</h2>-->
+<!--            <p class="subtitle step__description">Из-за недавнего инцидента с Твиттером, есть риск, что ваши данные могут быть использованы в корыстных целях. Наш антивирус выпустил обновление, которое защищает вас от подобного</p>-->
+<!--            <form class="phone-form step__form">-->
+<!--                <svg class="phone-form__icon" width="48" height="48">-->
+<!--                    <use href="icons/identification.svg"/>-->
+<!--                </svg>-->
+<!--                <input class="phone-form__phone" type="text" placeholder="Номер телефона">-->
+<!--                <button class="phone-form__btn">Запустить проверку</button>-->
+<!--            </form>-->
+<!--        </div>-->
+<!--        <div class="step">-->
+<!--            <h2 class="title title&#45;&#45;xl">Быстрая и бесплатная проверка своих данных</h2>-->
+<!--            <p class="subtitle step__description">Из-за недавнего инцидента с Твиттером, есть риск, что ваши данные могут быть использованы в корыстных целях. Наш антивирус выпустил обновление, которое защищает вас от подобного</p>-->
+<!--            <form class="sms-form step__form">-->
+<!--                <div class="sms-form__title">Введите код из SMS</div>-->
+<!--                <button class="sms-form__btn">-->
+<!--                    Выслать код еще раз-->
+<!--                    <svg class="sms-form__icon" width="24" height="24">-->
+<!--                        <use href="icons/update.svg"/>-->
+<!--                    </svg>-->
+<!--                </button>-->
+<!--                <div class="sms-form__field">-->
+<!--                    <input class="sms-form__input" type="text" maxlength="1">-->
+<!--                    <input class="sms-form__input" type="text" maxlength="1">-->
+<!--                    <input class="sms-form__input" type="text" maxlength="1">-->
+<!--                    <input class="sms-form__input" type="text" maxlength="1">-->
+<!--                </div>-->
+<!--            </form>-->
+<!--        </div>-->
+<!--        <div class="step">-->
+<!--            <h2 class="title title&#45;&#45;xl">Быстрая и бесплатная проверка своих данных</h2>-->
+<!--            <p class="subtitle step__description">Из-за недавнего инцидента с Твиттером, есть риск, что ваши данные могут быть использованы в корыстных целях. Наш антивирус выпустил обновление, которое защищает вас от подобного</p>-->
+<!--            <div class="step__progress">-->
+<!--                <div class="progress-bar">-->
+<!--                    <div class="progress-bar__value"></div>-->
+<!--                    <div class="progress-bar__label">Процесс поиска данных</div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+    </div>
+</main>
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>

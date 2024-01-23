@@ -1,0 +1,11 @@
+.btn {
+    display: inline-block;
+    border-radius: 8px;
+    border: 2px solid rgba(222, 224, 227, 0.92);
+    color: var(--dee-0-e-3, rgba(222, 224, 227, 0.92));
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 132%;
+    padding: 16px 22px;
+}

@@ -1,0 +1,106 @@
+.search-form {
+    border-radius: 12px;
+    background: rgba(222, 224, 227, 0.92);
+    padding: 20px;
+    display: flex;
+    height: 92px;
+    gap: 32px;
+    align-items: stretch;
+
+    &__field {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__field-icon {
+        flex-shrink: 0;
+    }
+
+    &__input {
+        overflow: hidden;
+        color: #282828;
+        font-feature-settings: 'clig' off, 'liga' off;
+        text-overflow: ellipsis;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 132%;
+        border-radius: 8px;
+        background: rgba(0, 0, 0, 0.08);
+        padding: 10px 16px;
+        outline: none;
+        height: 100%;
+        width: 100%;
+
+        &::placeholder {
+            color: #6C6F71;
+        }
+
+        &:active {
+            border-bottom: 2px solid #fff;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 16px;
+    }
+
+    &__btn {
+        border-radius: 8px;
+        padding: 16px;
+        color: rgba(255, 255, 255, 0.92);
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 132%;
+        background: #009DBD;
+        transition: 0.3s;
+        border: 1px solid transparent;
+
+        &:hover {
+            border: 1px solid rgba(255, 255, 255, 0.20);
+            box-shadow: 0px 8px 16px 0px rgba(0, 157, 189, 0.64);
+        }
+
+        &--blue {
+            background: #4146CF;
+
+            &:hover {
+                box-shadow: 0px 8px 16px 0px rgba(65, 70, 207, 0.64);
+            }
+        }
+
+        &:active {
+            border: 1px solid rgba(255, 255, 255, 0.20);
+        }
+    }
+}
+
+
+@media screen and (max-width: $tablet) {
+    .search-form {
+        flex-direction: column;
+        height: auto;
+
+        &__btn {
+            width: calc((100% - 16px) / 2);
+        }
+    }
+}
+
+
+@media screen and (max-width: $mobile) {
+    .search-form {
+        &__field {
+            height: 52px;
+        }
+
+        &__btn {
+            height: 52px;
+            padding: 16px 4px;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "langing-parcel-template",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel  --no-cache --open",
+    "build": "parcel build --no-cache --no-optimize --public-url ./",
+    "deploy": "cd dist && rsync -e 'ssh -p 21098' --archive --compress --delete . gldeniss@uashared15.twinservers.net:domains/dev.gldenis.site/",
+    "cleanup": "rmdir /q /s .parcel-cache dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/compressor-brotli": "^2.9.3",
+    "@parcel/compressor-gzip": "^2.9.3",
+    "@parcel/transformer-sass": "^2.9.3",
+    "parcel-packager-svg-sprite": "file:plugin/parcel-packager-svg-sprite",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "parcel-transformer-svg-sprite": "file:plugin/parcel-transformer-svg-sprite",
+    "posthtml": "^0.16.6",
+    "posthtml-include": "^1.7.4",
+    "sharp": "^0.31.3",
+    "stylelint": "^15.10.3",
+    "stylelint-config-standard-scss": "^11.0.0",
+    "stylelint-order": "^6.0.3"
+  },
+  "dependencies": {
+    "swiper": "^11.0.5"
+  }
+}

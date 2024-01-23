@@ -1,0 +1,22 @@
+.page {
+    &__search-form {
+        margin: 20px 0;
+    }
+
+    &__statistic {
+        margin: 60px 0;
+    }
+
+    &__protect {
+        margin-top: 60px;
+    }
+}
+
+
+@media screen and (max-width: $mobile) {
+    .page {
+        &__search-form {
+            margin: 40px 0;
+        }
+    }
+}

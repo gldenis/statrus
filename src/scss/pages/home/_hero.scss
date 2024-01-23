@@ -1,0 +1,50 @@
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    &__title {
+        padding: 4px 0;
+    }
+
+    &__slogan {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+        margin-top: 20px;
+    }
+
+    &__logo {
+        padding: 60px 46px;
+    }
+}
+
+
+@media screen and (max-width: $tablet) {
+    .hero {
+        &__logo {
+            padding: 30px 15px;
+
+            img {
+                width: 120px;
+                height: 120px;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .hero {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+
+        &__logo {
+            padding: 20px;
+        }
+
+        &__slogan {
+            letter-spacing: 0.29px;
+        }
+    }
+}

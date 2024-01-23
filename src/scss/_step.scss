@@ -1,0 +1,160 @@
+.step {
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__description {
+        margin-top: 44px;
+    }
+
+    &__form {
+        margin-top: 80px;
+    }
+
+    &:before {
+        z-index: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 408px;
+        height: 408px;
+        content: '';
+        display: block;
+        border-radius: 408px;
+        opacity: 0.32;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(65, 70, 207, 0.92) 0%, rgba(65, 70, 207, 0.00) 100%);
+    }
+}
+
+.phone-form {
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.60);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+    max-width: 440px;
+    width: 100%;
+
+    &__icon {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__phone {
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.08);
+        height: 52px;
+        padding: 10px 16px;
+        overflow: hidden;
+        color: $color-white;
+        font-size: 15px;
+        line-height: 132%;
+
+        &::placeholder {
+            color: #9DA2AD;
+        }
+    }
+
+    &__btn {
+        height: 52px;
+        border-radius: 8px;
+        background: #4146CF;
+    }
+}
+
+.sms-form {
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.60);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 440px;
+    width: 100%;
+
+    &__title {
+        color: rgba(255, 255, 255, 0.92);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 132%;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #888BEB;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 132%;
+        gap: 8px;
+        margin-top: 8px;
+    }
+
+    &__field {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 32px;
+    }
+
+    &__input {
+        width: 40px;
+        height: 60px;
+        border-bottom: 2px solid #D9D9D9;
+        color: rgba(255, 255, 255, 0.92);
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 146%;
+        outline: none;
+        background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, rgba(217, 217, 217, 0.04) 100%);
+
+        &:focus-visible {
+            border-bottom: 2px solid #D9D9D9;
+            background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, rgba(217, 217, 217, 0.16) 100%);
+        }
+    }
+}
+
+
+.step__progress {
+    padding: 20px;
+    max-width: 440px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.60);
+    width: 100%;
+    margin-top: 80px;
+}
+
+.progress-bar {
+    border-radius: 4px;
+    background: rgba(65, 70, 207, 0.64);
+    position: relative;
+
+    &__value {
+        height: 44px;
+        width: 32%;
+        border-radius: 4px;
+        background: #4146CF;
+    }
+
+    &__label {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $color-white;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 132%;
+    }
+}

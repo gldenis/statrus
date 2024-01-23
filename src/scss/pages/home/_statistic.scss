@@ -1,0 +1,62 @@
+.statistic-section {
+    display: flex;
+    gap: 40px;
+
+    &__item {
+        padding: 32px 16px 20px;
+        border-radius: 8px;
+        background: rgba(154, 155, 183, 0.40);
+        backdrop-filter: blur(4px);
+        text-align: center;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc((100% - 120px) / 4);
+    }
+
+    &__icon {
+        width: 40px;
+        height: auto;
+        fill: #fff;
+        margin-bottom: auto;
+    }
+
+    &__value {
+        color: rgba(255, 255, 255, 0.92);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 132%;
+    }
+
+    &__text {
+        color: rgba(255, 255, 255, 0.92);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 140%;
+        margin-top: 8px;
+    }
+}
+
+
+@media screen and (max-width: $laptop) {
+    .statistic-section {
+        gap: 20px;
+
+        &__item {
+            width: calc((100% - 60px) / 4);
+            padding: 32px 8px 20px;
+        }
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .statistic-section {
+        flex-wrap: wrap;
+
+        &__item {
+            width: calc((100% - 20px) / 2);
+            padding: 32px 8px 20px;
+        }
+    }
+}

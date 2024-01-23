@@ -1,0 +1,50 @@
+.protect-section {
+    padding: 32px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    background: linear-gradient( rgba(33, 34, 51, 0.92), rgba(33, 34, 51, 0.92)), url("../images/protect-bg.jpg") 50% / cover no-repeat;
+
+    &__content {
+
+    }
+
+    &__content-wrapper {
+        max-width: 408px;
+    }
+
+    &__title {
+
+    }
+
+    &__description {
+        margin-top: 16px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 146%;
+    }
+
+    &__btn {
+        margin-top: 32px;
+        padding: 14px 51px;
+        border-radius: 8px;
+        background: #4146CF;
+        border: 1px solid #4146CF;
+        transition: .3s;
+
+        &:hover {
+            box-shadow: 0px 8px 16px 0px rgba(65, 70, 207, 0.64);
+        }
+    }
+}
+
+
+@media screen and (max-width: $mobile) {
+    .protect-section{
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+    }
+}
